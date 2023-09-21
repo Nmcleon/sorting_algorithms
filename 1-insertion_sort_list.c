@@ -7,7 +7,7 @@
  */
 void insertion_sort_list(listint_t **list)
 {
-	listint_t *node, *next_node, *ptr;
+	listint_t *node, *next_node;
 
 	if (!list || (*list) == NULL)
 		return;
@@ -23,18 +23,12 @@ void insertion_sort_list(listint_t **list)
 				node->prev->next = node->next;
 			node->next = node->prev;
 			node->prev = node->prev->prev;
-			/*node->next->prev = node;*/
+			node->next->prev = node;
 			if (node->prev == NULL)
 				*list = node;
 			else
 				node->prev->next = node;
-			ptr = (*list);
-			while (ptr->next)
-			{
-				printf("%d, ", ptr->n);
-				ptr = ptr->next;
-			}
-			printf("%d\n", ptr->n);
+			print_list(*list);
 		}
 		node = next_node;
 	}
