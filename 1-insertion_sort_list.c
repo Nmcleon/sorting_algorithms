@@ -7,35 +7,33 @@
  */
 void insertion_sort_list(listint_t **list)
 {
-	listint_t *node, *next_node, *ptr;
+	listint_t *node = NULL, *tmp = NULL;
 
-	if (!list || (*list) == NULL)
+	if (list == NULL || *list == NULL || (*list)->next == NULL)
 		return;
-	node = (*list)->next;
-	while (node != NULL)
+
+	node = *list;
+	node = node->next;
+	while (node)
 	{
-		next_node = node->next;
-		while (node->prev != NULL && node->prev->n > node->n)
+		while (node->prev && node->n < (node->prev)->n)
 		{
+			tmp = node;
 			if (node->next)
-				node->next->prev = node->prev;
+				(node->next)->prev = tmp->prev;
+			(node->prev)->next = tmp->next;
+			node = node->prev;
+			tmp->prev = node->prev;
+			tmp->next = node;
 			if (node->prev)
-				node->prev->next = node->next;
-			node->next = node->prev;
-			node->prev = node->prev->prev;
-			/*node->next->prev = node;*/
-			if (node->prev == NULL)
-				*list = node;
-			else
-				node->prev->next = node;
-			ptr = (*list);
-			while (ptr->next)
-			{
-				printf("%d, ", ptr->n);
-				ptr = ptr->next;
-			}
-			printf("%d\n", ptr->n);
+				(node->prev)->next = tmp;
+			node->prev = tmp;
+			if (tmp->prev == NULL)
+				*list = tmp;
+			print_list(*list);
+			node = node->prev;
 		}
-		node = next_node;
+		node = node->next;
 	}
+
 }
