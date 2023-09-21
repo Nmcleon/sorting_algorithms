@@ -27,5 +27,6 @@ void print_list(const listint_t *list);
 /*	Sorting	*/
 /* Function prototype for bubble_sort */
 void bubble_sort(int *array, size_t size);
+/* Function prototype for sorting a doubly linked list in ascending  */
 
 #endif /* SORT_H */
