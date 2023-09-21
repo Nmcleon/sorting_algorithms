@@ -46,8 +46,16 @@ void insertion_sort_list(listint_t **list)
             current->prev = temp;
         }
 
-        *list = sorted;
+        if (current->next)
+        {
+            print_list(*list);
+        }
+        else
+        {
+            print_list(*list);
+            break;
+        }
+
         current = next;
-        print_list(*list);
     }
 }
