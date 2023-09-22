@@ -16,12 +16,12 @@ int lomuto_partition(int *array, int low, int high, size_t size)
     pivot = array[high]; /* pivot */
     i = low - 1; /* index of smaller element */
 
-    for (j = low; j <= high - 1; j++)
+    for (j = low; j <= high - 1; j++) /* loop throught elements for patition */
     {
-        if (array[j] < pivot)
+        if (array[j] < pivot) /* if current element < pivot */
         {
             i++;
-            if (i != j)
+            if (i != j) /* swap smaller with current element */
             {
                 swap = array[i];
                 array[i] = array[j];
@@ -31,7 +31,8 @@ int lomuto_partition(int *array, int low, int high, size_t size)
         }
     }
 
-    if (i + 1 != high)
+    /* swap pivot element with the element with the element (i+1) */
+    if (i + 1 != high) 
     {
         swap = array[i + 1];
         array[i + 1] = array[high];
@@ -57,7 +58,7 @@ void quickSort(int *array, int low, int high, size_t size)
 
     if (low < high)
     {
-        pivot = lomuto_partition(array, low, high, size);
+        pivot = lomuto_partition(array, low, high, size); /* patition array using Lomuto */
 
         /** 
          * sorting elements separately 
