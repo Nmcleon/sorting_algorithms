@@ -39,5 +39,7 @@ void quick_sort(int *array, size_t size);
 void shell_sort(int *array, size_t size);
 /* Function prototype that sorts an array using merge*/
 void merge_sort(int *array, size_t size);
+/* Function sorts doubly linked list of integers using Cocktail shaker */
+void cocktail_sort_list(listint_t **list);
 
 #endif /* SORT_H */
