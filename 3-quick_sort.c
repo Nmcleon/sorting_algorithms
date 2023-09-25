@@ -11,36 +11,35 @@
  */
 int lomuto_partition(int *array, int low, int high, size_t size)
 {
-    int pivot, swap, i, j;
+	int pivot, swap, i, j;
 
-    pivot = array[high]; /* pivot */
-    i = low - 1; /* index of smaller element */
+	pivot = array[high]; /* pivot */
+	i = low - 1;		 /* index of smaller element */
 
-    for (j = low; j <= high - 1; j++) /* loop throught elements for patition */
-    {
-        if (array[j] < pivot) /* if current element < pivot */
-        {
-            i++;
-            if (i != j) /* swap smaller with current element */
-            {
-                swap = array[i];
-                array[i] = array[j];
-                array[j] = swap;
-                print_array(array, size);
-            }
-        }
-    }
+	for (j = low; j <= high - 1; j++) /* loop throught elements for patition */
+	{
+		if (array[j] < pivot) /* if current element < pivot */
+		{
+			i++;
+			if (i != j) /* swap smaller with current element */
+			{
+				swap = array[i];
+				array[i] = array[j];
+				array[j] = swap;
+				print_array(array, size);
+			}
+		}
+	}
 
-    /* swap pivot element with the element with the element (i+1) */
-    if (i + 1 != high) 
-    {
-        swap = array[i + 1];
-        array[i + 1] = array[high];
-        array[high] = swap;
-        print_array(array, size);
-    }
-
-    return (i + 1);
+	/* swap pivot element with the element with the element (i+1) */
+	if (i + 1 != high)
+	{
+		swap = array[i + 1];
+		array[i + 1] = array[high];
+		array[high] = swap;
+		print_array(array, size);
+	}
+	return (i + 1);
 }
 
 /**
@@ -54,20 +53,20 @@ int lomuto_partition(int *array, int low, int high, size_t size)
  */
 void quickSort(int *array, int low, int high, size_t size)
 {
-    int pivot;
+	int pivot;
 
-    if (low < high)
-    {
-        pivot = lomuto_partition(array, low, high, size); /* patition array using Lomuto */
+	if (low < high)
+	{
+		pivot = lomuto_partition(array, low, high, size);
 
-        /** 
-         * sorting elements separately 
-         * before and after partition
-         */
-        
-        quickSort(array, low, pivot - 1, size);
-        quickSort(array, pivot + 1, high, size);
-    }
+		/**
+		 * sorting elements separately
+		 * before and after partition
+		 */
+
+		quickSort(array, low, pivot - 1, size);
+		quickSort(array, pivot + 1, high, size);
+	}
 }
 
 /**
@@ -79,8 +78,8 @@ void quickSort(int *array, int low, int high, size_t size)
  */
 void quick_sort(int *array, size_t size)
 {
-    if (array == NULL || size < 2)
-        return;
+	if (array == NULL || size < 2)
+		return;
 
-    quickSort(array, 0, size - 1, size);
+	quickSort(array, 0, size - 1, size);
 }
