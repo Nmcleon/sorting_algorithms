@@ -37,5 +37,7 @@ void selection_sort(int *array, size_t size);
 void quick_sort(int *array, size_t size);
 /* Function prototype that sorts an array of integers in ascending order*/
 void shell_sort(int *array, size_t size);
+/* Function prototype that sorts an array using merge*/
+void merge_sort(int *array, size_t size);
 
 #endif /* SORT_H */
