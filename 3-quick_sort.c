@@ -1,7 +1,7 @@
 #include "sort.h"
 
 /**
- * lomuto_partition - function that petitions an array using Lomuto scheme
+ * lomuto_partition - function that partitions an array using Lomuto scheme
  * @array: array to be sorted
  * @low: first index
  * @high: last index

@@ -2,7 +2,7 @@
 
 /**
   * shell_sort - Sorts array of integers in ascending order using Shell
-  * sort algorithm with Knuth sequence. 
+  * sort algorithm with Knuth sequence.
   * @array: array to be sorted.
   * @size: size of the array.
   * Return: Nothing (SUCCESS)
@@ -24,14 +24,15 @@ void shell_sort(int *array, size_t size)
 		for (i = gap; i < size; i++)
 		{
 			temp = array[i];
-			for (j = i; j >= gap && array[j - gap] > temp;
-					j -= gap)
+			for (j = i; j >= gap; j -= gap)
 			{
-					/*if (array[j] != array[j - gap])*/
-					array[j] = array[j - gap];
+				if (array[j - gap] < temp)
+					break;
+				/*if (array[j] != array[j - gap])*/
+				array[j] = array[j - gap];
 			}
 			/*if (array[j] != temp)*/
-				array[j] = temp;
+			array[j] = temp;
 
 		}
 		print_array(array, size);
