@@ -35,5 +35,7 @@ void insertion_sort_list(listint_t **list);
 void selection_sort(int *array, size_t size);
 /* FUnction prototype that sorts array of integers in ascending order using the Quick sort */
 void quick_sort(int *array, size_t size);
+/* Function prototype that sorts an array of integers in ascending order*/
+void shell_sort(int *array, size_t size);
 
 #endif /* SORT_H */
