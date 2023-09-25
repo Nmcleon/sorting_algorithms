@@ -37,5 +37,7 @@ void selection_sort(int *array, size_t size);
 void quick_sort(int *array, size_t size);
 /* Function prototype that sorts an array of integers in ascending order*/
 void shell_sort(int *array, size_t size);
+/* Function sorts doubly linked list of integers in ascending order using Cocktail shaker */
+void cocktail_sort_list(listint_t **list);
 
 #endif /* SORT_H */
