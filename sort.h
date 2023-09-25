@@ -20,20 +20,20 @@ typedef struct listint_s
 	struct listint_s *next;
 } listint_t;
 
-/*	Print	*/ 
+/*	Print	*/
 /* Function prototype for print_array */
 void print_array(const int *array, size_t size);
 /* Function prototype for print_list */
 void print_list(const listint_t *list);
 
-/*	Sorting	*/
+/*	Sorting	   */
 /* Function prototype for bubble_sort */
 void bubble_sort(int *array, size_t size);
 /* Function prototype for sorting a doubly linked list in ascending  */
 void insertion_sort_list(listint_t **list);
 /* Function prototype that sorts an array of integers in ascending order */
 void selection_sort(int *array, size_t size);
-/* FUnction prototype that sorts array of integers in ascending order using the Quick sort */
+/* FUnction prototype that sorts array of integers in ascending order*/
 void quick_sort(int *array, size_t size);
 /* Function prototype that sorts an array of integers in ascending order*/
 void shell_sort(int *array, size_t size);
