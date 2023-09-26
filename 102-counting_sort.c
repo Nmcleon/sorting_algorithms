@@ -29,10 +29,8 @@ void counting_sort(int *array, size_t size)
 		free(output_array);
 		return;
 	}
-	/* Initialize count_array elements to zero */
 	for (i = 0; i <= (size_t)max; i++)
 		count_array[i] = 0;
-	/* Count appearance of each element */
 	for (i = 0; i < size; i++)
 		count_array[array[i]]++;
 	/* Calculate total counts */
