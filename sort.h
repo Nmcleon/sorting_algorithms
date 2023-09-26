@@ -41,5 +41,7 @@ void shell_sort(int *array, size_t size);
 void merge_sort(int *array, size_t size);
 /* Function sorts doubly linked list of integers using Cocktail shaker */
 void cocktail_sort_list(listint_t **list);
+/*Function that sort array of integers in ascending order use Counting sort */
+void counting_sort(int *array, size_t size);
 
 #endif /* SORT_H */
