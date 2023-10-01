@@ -4,14 +4,14 @@ This repository contains implementations of various sorting algorithms. These al
 
 ## Table of Contents 📚
 
-1. [Bubble Sort](#bubble-sort)
-2. [Insertion Sort](#insertion-sort)
-3. [Selection Sort](#selection-sort)
-4. [Quick Sort](#quick-sort)
-5. [Shell Sort - Knuth Sequence](#shell-sort-knuth-sequence)
-6. [Cocktail Shaker Sort](#cocktail-shaker-sort)
-7. [Counting Sort](#counting-sort)
-8. [Merge Sort](#merge-sort)
+0. [Bubble Sort](#https://github.com/Nmcleon/sorting_algorithms/blob/main/0-bubble_sort.c)
+1. [Insertion Sort](#insertion-sort)
+2. [Selection Sort](#selection-sort)
+3. [Quick Sort](#quick-sort)
+4. [Shell Sort - Knuth Sequence](#shell-sort-knuth-sequence)
+5. [Cocktail Shaker Sort](#cocktail-shaker-sort)
+6. [Counting Sort](#counting-sort)
+7. [Merge Sort](#merge-sort)
 
 ## Progress: 137/200 📊
 
