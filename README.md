@@ -6,22 +6,20 @@ This repository contains implementations of various sorting algorithms. These al
 
 0. [Bubble Sort](https://github.com/Nmcleon/sorting_algorithms/blob/main/0-bubble_sort.c)
 1. [Insertion Sort](https://github.com/Nmcleon/sorting_algorithms/blob/main/1-insertion_sort_list.c)
-2. [Selection Sort](#selection-sort)
-3. [Quick Sort](#quick-sort)
-4. [Shell Sort - Knuth Sequence](#shell-sort-knuth-sequence)
-5. [Cocktail Shaker Sort](#cocktail-shaker-sort)
-6. [Counting Sort](#counting-sort)
-7. [Merge Sort](#merge-sort)
+2. [Selection Sort](https://github.com/Nmcleon/sorting_algorithms/blob/main/2-selection_sort.c)
+3. [Quick Sort](https://github.com/Nmcleon/sorting_algorithms/blob/main/3-quick_sort.c)
+4. [Shell Sort - Knuth Sequence](https://github.com/Nmcleon/sorting_algorithms/blob/main/100-shell_sort.c)
+5. [Cocktail Shaker Sort](https://github.com/Nmcleon/sorting_algorithms/blob/main/101-cocktail_sort_list.c)
+6. [Counting Sort](https://github.com/Nmcleon/sorting_algorithms/blob/main/102-counting_sort.c)
+7. [Merge Sort](https://github.com/Nmcleon/sorting_algorithms/blob/main/103-merge_sort.c)
 
 ## Progress: 137/200 📊
 
 Progress Bar: ██████████████████████▓▒░ 68.5%
 
-Acknowledgment: Not all questions have been answered.
-
 ## Bubble Sort 🛁
 
-Bubble Sort is a simple sorting algorithm that repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order. It continues to do this until no more swaps are needed.
+It's a simple sorting algorithm that repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order. It continues to do this until no more swaps
 
 - Prototype: `void bubble_sort(int *array, size_t size)`
 - Time Complexity:
@@ -31,7 +29,7 @@ Bubble Sort is a simple sorting algorithm that repeatedly steps through the list
 
 ## Insertion Sort 📥
 
-Insertion Sort is another simple sorting algorithm that builds the final sorted array one item at a time. It is much less efficient on large lists than more advanced algorithms such as quicksort, heapsort, or merge sort.
+It is a simple sorting algorithm that builds the final sorted array one item at a time. It is much less efficient on large lists than more advanced algorithms such as quicksort, heapsort, or merge sort.
 
 - Prototype: `void insertion_sort_list(listint_t **list)`
 - Time Complexity:
@@ -41,7 +39,7 @@ Insertion Sort is another simple sorting algorithm that builds the final sorted 
 
 ## Selection Sort 📊
 
-Selection Sort is an in-place comparison sorting algorithm. It divides the input list into two parts: the left sub-array, which is sorted, and the right sub-array, which is unsorted. The algorithm repeatedly selects the minimum element from the unsorted sub-array and moves it to the beginning of the sorted sub-array.
+It's an in-place comparison sorting algorithm. It divides the input list into two parts: the left sub-array, which is sorted, and the right sub-array, which is unsorted. The algorithm repeatedly selects the minimum element from the unsorted sub-array and moves it to the beginning of the sorted sub-array.
 
 - Prototype: `void selection_sort(int *array, size_t size)`
 - Time Complexity:
@@ -51,7 +49,7 @@ Selection Sort is an in-place comparison sorting algorithm. It divides the input
 
 ## Quick Sort 🚀
 
-Quick Sort is a highly efficient and widely used sorting algorithm. It uses a divide-and-conquer approach to sort an array. The basic idea is to select a 'pivot' element from the array and partition the other elements into two sub-arrays, according to whether they are less than or greater than the pivot.
+Is a highly efficient and widely used sorting algorithm. It uses a divide-and-conquer approach to sort an array. The basic idea is to select a 'pivot' element from the array and partition the other elements into two sub-arrays, according to whether they are less than or greater than the pivot.
 
 - Prototype: `void quick_sort(int *array, size_t size)`
 - Time Complexity:
@@ -61,7 +59,7 @@ Quick Sort is a highly efficient and widely used sorting algorithm. It uses a di
 
 ## Shell Sort - Knuth Sequence 🐚
 
-Shell Sort is an optimization of the insertion sort algorithm that works by comparing elements separated by a fixed gap. The gap is reduced after each pass until it becomes 1, making the final pass an ordinary insertion sort.
+An optimization of the insertion sort algorithm that works by comparing elements separated by a fixed gap. The gap is reduced after each pass until it becomes 1, making the final pass an ordinary insertion sort.
 
 - Prototype: `void shell_sort(int *array, size_t size)`
 
@@ -83,4 +81,6 @@ Merge Sort is an efficient, stable, and comparison-based sorting algorithm. It d
 
 - Prototype: `void merge_sort(int *array, size_t size)`
 
-Feel free to explore the source code for each sorting algorithm in this repository and try them out. Happy sorting! 🎉
+## Authors
+[Hafsa Marouche](https://github.com/HafsaMAR)
+[Noah K](https://github.com/Nmcleon)
