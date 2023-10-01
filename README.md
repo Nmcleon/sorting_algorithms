@@ -5,7 +5,7 @@ This repository contains implementations of various sorting algorithms. These al
 ## Table of Contents 📚
 
 0. [Bubble Sort](https://github.com/Nmcleon/sorting_algorithms/blob/main/0-bubble_sort.c)
-1. [Insertion Sort](#insertion-sort)
+1. [Insertion Sort](https://github.com/Nmcleon/sorting_algorithms/blob/main/1-insertion_sort_list.c)
 2. [Selection Sort](#selection-sort)
 3. [Quick Sort](#quick-sort)
 4. [Shell Sort - Knuth Sequence](#shell-sort-knuth-sequence)
