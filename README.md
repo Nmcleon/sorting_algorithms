@@ -82,5 +82,6 @@ Merge Sort is an efficient, stable, and comparison-based sorting algorithm. It d
 - Prototype: `void merge_sort(int *array, size_t size)`
 
 ## Authors
-[Hafsa Marouche](https://github.com/HafsaMAR)
-[Noah K](https://github.com/Nmcleon)
+
+- [Hafsa Marouche](https://github.com/HafsaMAR)
+- [Noah K](https://github.com/Nmcleon)
