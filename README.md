@@ -1,5 +1,3 @@
-Certainly! Here's an updated README with a progress bar indicating a score of 137 out of 200, along with the acknowledgment that not all questions were answered:
-
 # Sorting Algorithms in C 🧮
 
 This repository contains implementations of various sorting algorithms. These algorithms are designed to sort arrays of integers in ascending order. Each algorithm is provided with a detailed description and an analysis of its time complexity.
